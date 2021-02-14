@@ -1,0 +1,4 @@
+opls_145B:   [C;X3;r6][C;X3]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6]1
+
+
+opls_145C:   [C;X3;r6][C;%opls_137]1[C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6][C;X3;r6]1

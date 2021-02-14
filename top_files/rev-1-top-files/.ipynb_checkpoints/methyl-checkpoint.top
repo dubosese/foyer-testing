@@ -1,0 +1,57 @@
+;
+;   File init.top  was generated
+;   By user: savannahdubose (501)
+;   On host: savannahs-macbook.local
+;   At date: Wed. July  3 13:51:40 2020
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       ipykernel_launcher.py, VERSION 3.0.0+57.g74a84d30
+;   Executable:   ipykernel_launcher.py
+;   Library dir:  /usr/local/gromacs/share/gromacs/top
+;   Command line:
+;     /Users/savannahdubose/opt/anaconda3/envs/screening/lib/python3.6/site-packages/ipykernel_launcher.py -f /Users/savannahdubose/Library/Jupyter/runtime/kernel-64a65bc8-5ec1-46cf-a0f5-6def0913b7b4.json
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               3               yes             1            1           
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+c2             6  12.010780  0.00000000  A     0.33996695       0.359824
+ha             1   1.007947  0.00000000  A     0.25996425        0.06276
+
+
+[ moleculetype ]
+; Name            nrexcl
+RES          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 RES rtp RES q 0.0
+    1         c2      1    RES      C      1 0.00000000  12.010780   ; qtot 0.000000
+    2         ha      1    RES      H      2 0.00000000   1.007947   ; qtot 0.000000
+    3         ha      1    RES     H1      3 0.00000000   1.007947   ; qtot 0.000000
+    4         ha      1    RES     H2      4 0.00000000   1.007947   ; qtot 0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.10879 287106.080000
+      1      3     1   0.10879 287106.080000
+      1      4     1   0.10879 287106.080000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      2      1      3     1   116.9000000 318.820800
+      2      1      4     1   116.9000000 318.820800
+      3      1      4     1   116.9000000 318.820800
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+RES                  1

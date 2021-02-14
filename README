@@ -1,0 +1,9 @@
+This folder contains files, data, etc. that was used to correct atomtypes in the oplsaa forcefield.
+
+top_files: every terminal group was atomtyped and saved to a top file to ensure correct charges. There are various rev 0,1,2... folders containing top files throughout the progression of corrections.
+
+triazole_top_files: triazole was particularly tricky, hence the dedicated folder.
+
+chain.py: unfinished attempt at building a script to streamline chain building and atomtyping for testing within jupyter notebooks.
+
+forcefield-testing.ipynb: where chains were built and tested.
